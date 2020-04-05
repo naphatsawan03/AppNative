@@ -6,7 +6,11 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-
+import { CallNumber } from '@ionic-native/call-number';
+import { SMS } from '@ionic-native/sms';
+import { SocialSharing } from '@ionic-native/social-sharing';
+import { Clipboard } from '@ionic-native/clipboard';
+import { ColoredBrowserTabs } from '@ionic-native/colored-browser-tabs';
 @NgModule({
   declarations: [
     MyApp,
@@ -24,7 +28,13 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    CallNumber,
+    SMS,
+    SocialSharing,
+    Clipboard,
+    ColoredBrowserTabs
+    
   ]
 })
 export class AppModule {}

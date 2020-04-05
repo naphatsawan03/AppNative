@@ -1,14 +1,46 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Ionic Native
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
+  <h2>All Native</h2>
+  <p>Call Number</p>
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v3">docs</a> will be your guide.
+    <button ion-button color="secondary" (click)="callnum()">
+      Call Number
+    </button>
   </p>
+
+  <p>SMS</p>
+  <p>
+    <button ion-button color="secondary" (click)="send()">
+      SMS
+    </button>
+  </p>
+
+  <p>Socail Sharering</p>
+  <p>
+    <button ion-button color="secondary" (click)="share()">
+      Socail Sharering
+    </button>
+  </p>
+
+  <p>Clipboard</p>
+  <p>
+    <button ion-button color="secondary" (click)="copy()">
+      Clipboard
+    </button>
+  </p>
+
+  <p>Color BrowserTab</p>
+  <p>
+    <button ion-button color="secondary" (click)="color()">
+      BrowserTab
+    </button>
+  </p>
+  
 </ion-content>
